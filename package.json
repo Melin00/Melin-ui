@@ -22,7 +22,9 @@
     "build-storybook": "storybook build",
     "build-ts": "tsc -p tsconfig.build.json",
     "build-css": "node-sass ./src/style/index.scss ./dist/index.css",
-    "clean": "rimraf ./dist"
+    "clean": "rimraf ./dist",
+    "prepublishOnly": "npm run test:nowatch && npm run lint && npm run build",
+    "lint": "eslint --ext js,ts,tsx src --max-warnings 5"
   },
   "eslintConfig": {
     "extends": [
