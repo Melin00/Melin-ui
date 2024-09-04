@@ -1,4 +1,4 @@
-import React, { createContext, FC, forwardRef, ReactNode, useImperativeHandle } from "react";
+import React, { createContext, forwardRef, ForwardRefRenderFunction, ReactNode, useImperativeHandle } from "react";
 import { ValidateError } from 'async-validator'
 import useStore, { FormState } from "./useStore";
 

@@ -9,7 +9,6 @@ import { CustomRule } from './useStore'
 
 const meta: Meta<typeof Form> = {
     title: 'Form',
-    id: 'From',
     component: Form,
     subcomponents: { Item },
     tags: ['autodocs'],
