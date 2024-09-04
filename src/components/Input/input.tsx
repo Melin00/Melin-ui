@@ -1,4 +1,4 @@
-import React, { FC, forwardRef, InputHTMLAttributes, ReactElement } from "react";
+import React, { forwardRef, InputHTMLAttributes, ReactElement } from "react";
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import classNames from 'classnames';
 import Icon from "../Icon/icon";
@@ -13,7 +13,7 @@ export interface InputProps extends Omit<InputHTMLAttributes<HTMLElement>, 'size
     append?: string | ReactElement
 }
 
-export const Input: FC<InputProps> = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
+export const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
     const { 
         disabled, 
         size, 

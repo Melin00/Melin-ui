@@ -18,7 +18,7 @@ const preview: Preview = {
     options: {
       storySort: {
         method: 'alphabetical',
-        order: ['Welcome', 'Button', 'Menu', 'Input', 'AutoComplete', 'Upload'], 
+        order: ['Welcome', 'Button', 'Menu', 'Input', 'AutoComplete', 'Select', 'Upload', 'Form'], 
       },
   },
   },
